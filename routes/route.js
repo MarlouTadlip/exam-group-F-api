@@ -12,4 +12,3 @@ router.get('/exams', (req, res) =>
 
 
 router.post('/', exam)
-
