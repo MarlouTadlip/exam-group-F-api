@@ -15,7 +15,7 @@ router.get('/exams', (req, res) =>
   res.json({message: "Lists"})
 )
 
-router.put('/:id', (req, res) => {
+router.put('/exams/:id', (req, res) => {
   const examId = parseInt(req.params.id);
   const updatedData = req.body;
 
