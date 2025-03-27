@@ -30,6 +30,11 @@ router.put('/:id', (req, res) => {
 });
 
 
-router.post('/', exam)
+rrouter.post('/', (req, res) => {
+  const newExam = req.body;
+  newExam.id = exams.length + 1; // Simple ID assignment
+  exams.push(newExam);
+  res.status(201).json(newExam);
+});
 
-
+module.exports = router;
