@@ -9,3 +9,7 @@ router.get('/exam-group', (req,res) =>
 router.get('/exams', (req, res) =>
   res.json({message: "Lists"})
 )
+
+
+router.post('/', exam)
+
