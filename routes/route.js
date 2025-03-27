@@ -12,7 +12,7 @@ router.get('/exam-group', (req,res) =>
 )
 
 router.get('/exams', (req, res) =>
-  res.json({message: "Lists"})
+  res.json(exams)
 )
 
 router.put('/exams/:id', (req, res) => {
